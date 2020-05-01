@@ -1,0 +1,8 @@
+ul {
+  list-style: none;
+  padding: none;
+}
+
+.current-weather-container {
+  margin: auto;
+}
