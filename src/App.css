@@ -5,4 +5,16 @@ ul {
 
 .current-weather-container {
   margin: auto;
+  width: 50%;
 }
+
+.current-weather-container > img {
+    display: block;
+    margin: auto;
+  }
+
+.main-header, .current-weather-container > h2 {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }

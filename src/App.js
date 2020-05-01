@@ -17,7 +17,23 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log('component has mounted!!')
+
+    // if (navigator.geolocation) {
+    //   navigator.geolocation.getCurrentPosition(showPosition);
+    // } else {
+    //   alert('Location detection not possible - user action')
+    // }
+
+    //  showPosition = (position) => {
+    //   console.log(position.coords.latitude + "," + position.coords.longitude);
+    //   var latlong = position.coords.latitude + "," + position.coords.longitude;
+      
+    // }
     this.getData();
+
+
+    
+
   }
 
   getData() {
@@ -27,6 +43,7 @@ class App extends React.Component {
     request.onload = function() {
       let response = request.response;
       let parsedData = JSON.parse(response);
+      console.log(parsedData)
       this.setState({
         data: parsedData
       }) 
